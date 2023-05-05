@@ -1,6 +1,7 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import OpenBlurb from './components/OpenBlurb.vue';
+//import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
@@ -8,12 +9,12 @@ import TheWelcome from './components/TheWelcome.vue'
     <img alt="cute cthulhu" class="logo" src="/src/assets/cutethulhu.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <OpenBlurb />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    
   </main>
 </template>
 
@@ -21,6 +22,7 @@ import TheWelcome from './components/TheWelcome.vue'
 
 header {
   line-height: 1.5;
+  align-items: center;
 }
 
 .logo {
@@ -31,9 +33,9 @@ header {
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
+ 
 
   .logo {
     margin: 0 2rem 0 0;
